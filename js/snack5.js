@@ -42,9 +42,11 @@ console.log(array2);
 // console.log(array1);
 // console.log(array2);
 
+// MENTRE NON SONO UGUALI DI LUNGHEZZA FAI QUESTO
 while (array1.length !== array2.length) {
     const rndNum = Math.floor(Math.random() * 80 + 1);
-
+    
+    // STABILISCO A QUALE ARRAY AGGIUNGERE NUMERI
     if (array1.length > array2.length) {
         array2.push(rndNum);
     } else if (array1.length < array2.length) {
