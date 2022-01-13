@@ -10,8 +10,11 @@ let sum = 0;
 let i = 0;
 while (i < 5) {
     const num = parseInt(prompt('Inserisci un numero').trim());
-    sum += num;
+    if (!isNaN(num)) {
+        sum += num;
+    }
     console.log(num);
+    
     i++;
 }
 console.log(sum);
