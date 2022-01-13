@@ -23,8 +23,10 @@ while (fakeGuests.length < 3) {
 
     fakeName = `${names[rndName]} ${surnames[rndSurname]}`;
     
+    console.log(fakeName);
+    
     //VALIDATION
-    if (fakeName !== fakeGuests[fakeName]) {
+    if (!fakeGuests.includes(fakeName)) {
         fakeGuests.push(fakeName);
     }
 }
