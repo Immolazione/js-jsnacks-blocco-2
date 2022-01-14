@@ -10,8 +10,12 @@ let num = parseInt(prompt('Inserisci un numero').trim());
 
 // SE PARI STAMPO, SE DISPARI STAMPO IL SUCCESSIVO
 
-while (num % 2 !== 0) {
+if (num % 2 !== 0) {
     num += 1;
 }
+
+// while (num % 2 !== 0) {
+//     num += 1;
+// }
 
 console.log(num)
